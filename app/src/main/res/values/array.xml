@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="string_array_sortby">
+        <item name="popularity">Most Popular</item>
+        <item name="vote_average">Highest Rated</item>
+    </string-array>
+    <string-array
+        name="value_array_sortby">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+</resources>
