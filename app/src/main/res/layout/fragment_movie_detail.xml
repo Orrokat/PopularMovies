@@ -1,93 +1,100 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_alignParentTop="true"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    tools:context="app.com.example.susan.popularmovies.MovieDetailActivityFragment"
-    tools:showIn="@layout/activity_movie_detail">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/et_movie_title"
-        android:text="@string/default_movie_title"
-        android:background="@color/colorPrimary"
-        android:textSize="30sp"
-        android:padding="10dp" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:context="app.com.example.susan.popularmovies.MovieDetailActivityFragment"
+        tools:showIn="@layout/activity_movie_detail">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="250dp"
-            android:scaleType="centerCrop"
-            android:id="@+id/iv_movie_poster"
-            android:contentDescription="Movie Poster"
-            android:contextClickable="false"
-            android:paddingLeft="35dp"
-            android:paddingTop="35dp"
-            android:paddingBottom="20dp"
-            android:paddingRight="20dp"
-            android:src="@drawable/orrokat_icon" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_movie_title"
+            android:text="@string/default_movie_title"
+            android:background="@color/colorPrimary"
+            android:textSize="30sp"
+            android:padding="10dp" />
+
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="10dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/et_release_date_label"
-                android:text="Release Date"
-                android:paddingLeft="20dp"
-                android:paddingTop="20dp"
-                android:paddingRight="20dp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/et_release_date"
-                android:text="Release Date"
-                android:paddingLeft="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/iv_movie_poster"
+                android:contentDescription="Movie Poster"
+                android:contextClickable="false"
+                android:paddingLeft="35dp"
+                android:paddingTop="35dp"
+                android:paddingBottom="20dp"
                 android:paddingRight="20dp"
-                android:paddingBottom="20dp" />
+                android:src="@drawable/orrokat_icon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_release_date_label"
+                    android:text="Release Date"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_release_date"
+                    android:text="Release Date"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="20dp" />
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/et_vote_average_label"
-                android:text="Vote Average"
-                android:paddingLeft="20dp"
-                android:paddingTop="20dp"
-                android:paddingRight="20dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/et_vote_average"
-                android:text="Vote Average"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                android:paddingBottom="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_vote_average_label"
+                    android:text="Vote Average"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_vote_average"
+                    android:text="Vote Average"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="20dp"/>
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:ems="10"
-        android:id="@+id/et_synopsis"
-        android:text="The quick brown fox jumped over the lazy dog"
-        android:paddingLeft="10dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:paddingRight="10dp"
-        android:nestedScrollingEnabled="true"
-        android:scrollIndicators="right" />
-</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/et_synopsis"
+            android:text="The quick brown fox jumped over the lazy dog"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:nestedScrollingEnabled="true"
+            android:scrollIndicators="right" />
+
+    </LinearLayout>
+</ScrollView>
